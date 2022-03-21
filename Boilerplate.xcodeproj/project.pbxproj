@@ -9,37 +9,51 @@
 /* Begin PBXBuildFile section */
 		5FD843270ADFE44F70549EB6 /* Pods_Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2C33650E750F49CE4BD418 /* Pods_Boilerplate.framework */; };
 		6C3F79FEFA8042B8E248C756 /* Pods_Boilerplate_BoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3FE457EAC93F0795DE86BF /* Pods_Boilerplate_BoilerplateUITests.framework */; };
+		DA7015E0F7008D57AA800344 /* HourlyForecastBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BFD193C47098C467FA7BC /* HourlyForecastBody.swift */; };
+		DA70851E2FC2827E87225C89 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA751ACD2D9E5AF24248732C /* Forecast.swift */; };
+		DA70EED8BF08874A99E828CA /* ForecastDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AE64657A48A6B7CF36FD4 /* ForecastDetailVM.swift */; };
 		DA720705BF00AB21DB1E854A /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72269125FB2B4C983B6839 /* RestAPI.swift */; };
 		DA72548E69EB1A4720706470 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DA725D3F3594537780BA6642 /* .swiftlint.yml */; };
-		DA7276168645959D199F34AF /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBA9BAC41237D6DE00891 /* AuthRepository.swift */; };
-		DA72796D5671083818C4302F /* LoginBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D10DC239F04BD47FDDECA /* LoginBody.swift */; };
 		DA728733BCDC2791FA77B0E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA745D08BE3AA28494AFA5E5 /* Assets.xcassets */; };
+		DA72FC2B050BAE96DE9D04E3 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A8B575DE1E4CB0D1B353B /* WeatherRepository.swift */; };
 		DA7327F1DDF48A78553A8D6E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DA729A66F0485B07F34CEA70 /* README.md */; };
+		DA73A96BEFBDC5A6752DA2F1 /* HourlyForecastBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BFD193C47098C467FA7BC /* HourlyForecastBody.swift */; };
+		DA7410732C7383BE2C4CBCD3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */; };
+		DA741C36210A7CB4DAE03585 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74BAFB8ED798423FAF94B9 /* HomeVM.swift */; };
 		DA7430029B656E79E8B6E4DD /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72269125FB2B4C983B6839 /* RestAPI.swift */; };
-		DA74B312DB10260790C95A15 /* LoginBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D10DC239F04BD47FDDECA /* LoginBody.swift */; };
+		DA7483E8FE168BD704F2AEF5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C899BA7FCEF51ACFB2AAE /* Environment.swift */; };
 		DA752F50DB033921FC5AAFAA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA7FC743E2E545E7483B3FDE /* .gitignore */; };
+		DA755F133BB2418E0713A720 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74BAFB8ED798423FAF94B9 /* HomeVM.swift */; };
+		DA756D679E2E92A8C3EE21D0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */; };
 		DA758E346BF0A43C9EC2C12B /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */; };
 		DA7604A8B5E182269F7248F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA79869624FAE12C10E9614E /* Preview Assets.xcassets */; };
 		DA760D531847A7ADDA188397 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA7FC743E2E545E7483B3FDE /* .gitignore */; };
-		DA76294764CFE040296A6D47 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78CBBF27D2204F590B8131 /* LoginView.swift */; };
+		DA762CDC470B94A680264292 /* ForecastDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AE64657A48A6B7CF36FD4 /* ForecastDetailVM.swift */; };
 		DA7632FBB9E49EA193DC76EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77815E12E4657CDB768E89 /* ContentView.swift */; };
 		DA763D2CF10651718B12A09E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A855688A7C5B99B6C0AF9 /* User.swift */; };
+		DA765213B880E8739B6100D0 /* ForecastDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AE64657A48A6B7CF36FD4 /* ForecastDetailVM.swift */; };
 		DA76E1847A3A96E4D4DDF249 /* BoilerplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE31DBFB7ECBD8BD494F6 /* BoilerplateApp.swift */; };
-		DA78EB2E098C2DAFCDF27131 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBA9BAC41237D6DE00891 /* AuthRepository.swift */; };
+		DA788F6AF6248E7BC12332E4 /* HourlyForecastBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BFD193C47098C467FA7BC /* HourlyForecastBody.swift */; };
+		DA78B8E50E05B43983E09BB8 /* ForecastDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A8E63AC3AC1205C1041E7 /* ForecastDetailView.swift */; };
 		DA796B46816304DB376D0F7D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DA729A66F0485B07F34CEA70 /* README.md */; };
+		DA79877F7C863E7B040285BB /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74BAFB8ED798423FAF94B9 /* HomeVM.swift */; };
 		DA79E3A1F5D435E19FF7E47B /* BoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7810A60FF7890A5C7A591D /* BoilerplateUITests.swift */; };
+		DA7A6448E577D6562248535C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */; };
 		DA7AE80049D8467AD108B740 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A855688A7C5B99B6C0AF9 /* User.swift */; };
 		DA7B5B0AD98AA2B6D13315CB /* BoilerplateRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711A13ACAB725788CCB59B /* BoilerplateRestAPI.swift */; };
 		DA7BB5739317543F53048762 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A855688A7C5B99B6C0AF9 /* User.swift */; };
+		DA7BE9C2CF8DE95FF7CE7968 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A8B575DE1E4CB0D1B353B /* WeatherRepository.swift */; };
 		DA7C1653A718F0A243568EC3 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */; };
-		DA7C810ECB25844836FFB16C /* LoginBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D10DC239F04BD47FDDECA /* LoginBody.swift */; };
+		DA7C4E066C989E8529B9923D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C0909BA36B249C4F54D1 /* HomeView.swift */; };
 		DA7D872EBAB6FAD34458D18E /* BoilerplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D20EF37ED1715C87864EB /* BoilerplateUITestsLaunchTests.swift */; };
-		DA7D9F76F15C848F0D54A8ED /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EBA9BAC41237D6DE00891 /* AuthRepository.swift */; };
 		DA7DD864C934FEACD64225AC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DA725D3F3594537780BA6642 /* .swiftlint.yml */; };
 		DA7DE6C54F445E78FF7295D6 /* BoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76444820248590F0E8014A /* BoilerplateTests.swift */; };
+		DA7E7F5128CCCF70CD6A1ED4 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA751ACD2D9E5AF24248732C /* Forecast.swift */; };
 		DA7EA2E5AA767045D4B94D91 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DA725D3F3594537780BA6642 /* .swiftlint.yml */; };
 		DA7ED79C47B42C3E84C4CE7A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA7FC743E2E545E7483B3FDE /* .gitignore */; };
 		DA7F14C16C402C9CE7EF9245 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72269125FB2B4C983B6839 /* RestAPI.swift */; };
+		DA7F5BBEE3304837AD7452DD /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA751ACD2D9E5AF24248732C /* Forecast.swift */; };
+		DA7FDA0CB097913767356082 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A8B575DE1E4CB0D1B353B /* WeatherRepository.swift */; };
 		DA7FDB6609DCDB8DDB79B31B /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */; };
 		EC9970C053D26ADFFC3BEFC8 /* Pods_BoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370F1BABBD1AD7CAD6F0D51E /* Pods_BoilerplateTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,27 +82,35 @@
 		370F1BABBD1AD7CAD6F0D51E /* Pods_BoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E54E64768FB8CCBD52790A9 /* Pods-Boilerplate-BoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate-BoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-Boilerplate-BoilerplateUITests/Pods-Boilerplate-BoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6D2C33650E750F49CE4BD418 /* Pods_Boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3A25A727E804F300E87184 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		6E3A25AB27E808CE00E87184 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		A9C5A2E13FCEA3DFBC7513A6 /* Pods-Boilerplate-BoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate-BoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-Boilerplate-BoilerplateUITests/Pods-Boilerplate-BoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B519B94D7C358E800837BCB9 /* Pods-Boilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate.debug.xcconfig"; path = "Target Support Files/Pods-Boilerplate/Pods-Boilerplate.debug.xcconfig"; sourceTree = "<group>"; };
 		DA711A13ACAB725788CCB59B /* BoilerplateRestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoilerplateRestAPI.swift; sourceTree = "<group>"; };
 		DA72269125FB2B4C983B6839 /* RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		DA725D3F3594537780BA6642 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DA729A66F0485B07F34CEA70 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		DA73F6D6A66F9A540FA73D85 /* BoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA745D08BE3AA28494AFA5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA74BAFB8ED798423FAF94B9 /* HomeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		DA751ACD2D9E5AF24248732C /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		DA76444820248590F0E8014A /* BoilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateTests.swift; sourceTree = "<group>"; };
 		DA77815E12E4657CDB768E89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA77C0909BA36B249C4F54D1 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DA7810A60FF7890A5C7A591D /* BoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateUITests.swift; sourceTree = "<group>"; };
-		DA78CBBF27D2204F590B8131 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DA79869624FAE12C10E9614E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA7A37178B5F83976E4EACE7 /* Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7A855688A7C5B99B6C0AF9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DA7A8B575DE1E4CB0D1B353B /* WeatherRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		DA7A8E63AC3AC1205C1041E7 /* ForecastDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDetailView.swift; sourceTree = "<group>"; };
+		DA7AE64657A48A6B7CF36FD4 /* ForecastDetailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDetailVM.swift; sourceTree = "<group>"; };
 		DA7B2132366640E6D97F99A6 /* BoilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA7D10DC239F04BD47FDDECA /* LoginBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBody.swift; sourceTree = "<group>"; };
+		DA7BFD193C47098C467FA7BC /* HourlyForecastBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyForecastBody.swift; sourceTree = "<group>"; };
+		DA7C899BA7FCEF51ACFB2AAE /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		DA7D20EF37ED1715C87864EB /* BoilerplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA7DE31DBFB7ECBD8BD494F6 /* BoilerplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateApp.swift; sourceTree = "<group>"; };
-		DA7EBA9BAC41237D6DE00891 /* AuthRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		DA7FC743E2E545E7483B3FDE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		EB177C14787451DC0665BF48 /* Pods-Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Boilerplate/Pods-Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,16 +156,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		DA7397F05CD98544365140D3 /* home */ = {
+		DA7397F05CD98544365140D3 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				DA77C0909BA36B249C4F54D1 /* HomeView.swift */,
+				DA7A8B575DE1E4CB0D1B353B /* WeatherRepository.swift */,
+				DA7A8E63AC3AC1205C1041E7 /* ForecastDetailView.swift */,
+				DA74BAFB8ED798423FAF94B9 /* HomeVM.swift */,
+				DA7AE64657A48A6B7CF36FD4 /* ForecastDetailVM.swift */,
 			);
-			path = home;
+			path = weather;
 			sourceTree = "<group>";
 		};
 		DA74355C22EE02E33FF430DB = {
 			isa = PBXGroup;
 			children = (
+				6E3A25AB27E808CE00E87184 /* release.xcconfig */,
+				6E3A25A727E804F300E87184 /* debug.xcconfig */,
 				DA7F17C865270A8D1AD7F4E1 /* Products */,
 				DA7B97218825ABAE9CA09666 /* Boilerplate */,
 				DA7C37295E0AF0209E4E10DF /* BoilerplateTests */,
@@ -156,24 +185,24 @@
 			);
 			sourceTree = "<group>";
 		};
+		DA74B17740BA5E03A2CF8D17 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				DA7BFD193C47098C467FA7BC /* HourlyForecastBody.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
 		DA7551001C9400CFD349B47C /* network */ = {
 			isa = PBXGroup;
 			children = (
 				DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */,
 				DA711A13ACAB725788CCB59B /* BoilerplateRestAPI.swift */,
-				DA7D10DC239F04BD47FDDECA /* LoginBody.swift */,
 				DA72269125FB2B4C983B6839 /* RestAPI.swift */,
+				DA74B17740BA5E03A2CF8D17 /* request */,
+				DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */,
 			);
 			path = network;
-			sourceTree = "<group>";
-		};
-		DA76A00772B2F973C98598F3 /* auth */ = {
-			isa = PBXGroup;
-			children = (
-				DA78CBBF27D2204F590B8131 /* LoginView.swift */,
-				DA7EBA9BAC41237D6DE00891 /* AuthRepository.swift */,
-			);
-			path = auth;
 			sourceTree = "<group>";
 		};
 		DA76EA3E3ECF3172EECB4032 /* Preview Content */ = {
@@ -187,8 +216,7 @@
 		DA785423C7C7BF371612A7F6 /* feature */ = {
 			isa = PBXGroup;
 			children = (
-				DA76A00772B2F973C98598F3 /* auth */,
-				DA7397F05CD98544365140D3 /* home */,
+				DA7397F05CD98544365140D3 /* weather */,
 			);
 			path = feature;
 			sourceTree = "<group>";
@@ -197,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				DA7A855688A7C5B99B6C0AF9 /* User.swift */,
+				DA751ACD2D9E5AF24248732C /* Forecast.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -211,6 +240,7 @@
 				DA785423C7C7BF371612A7F6 /* feature */,
 				DA7551001C9400CFD349B47C /* network */,
 				DA7A57D6D1903EE109DA4B20 /* model */,
+				DA7C899BA7FCEF51ACFB2AAE /* Environment.swift */,
 			);
 			path = Boilerplate;
 			sourceTree = "<group>";
@@ -503,11 +533,15 @@
 			files = (
 				DA7DE6C54F445E78FF7295D6 /* BoilerplateTests.swift in Sources */,
 				DA7327F1DDF48A78553A8D6E /* README.md in Sources */,
-				DA7D9F76F15C848F0D54A8ED /* AuthRepository.swift in Sources */,
 				DA763D2CF10651718B12A09E /* User.swift in Sources */,
 				DA758E346BF0A43C9EC2C12B /* NetworkResult.swift in Sources */,
-				DA74B312DB10260790C95A15 /* LoginBody.swift in Sources */,
 				DA7F14C16C402C9CE7EF9245 /* RestAPI.swift in Sources */,
+				DA7FDA0CB097913767356082 /* WeatherRepository.swift in Sources */,
+				DA788F6AF6248E7BC12332E4 /* HourlyForecastBody.swift in Sources */,
+				DA7E7F5128CCCF70CD6A1ED4 /* Forecast.swift in Sources */,
+				DA755F133BB2418E0713A720 /* HomeVM.swift in Sources */,
+				DA762CDC470B94A680264292 /* ForecastDetailVM.swift in Sources */,
+				DA7410732C7383BE2C4CBCD3 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,11 +552,15 @@
 				DA79E3A1F5D435E19FF7E47B /* BoilerplateUITests.swift in Sources */,
 				DA7D872EBAB6FAD34458D18E /* BoilerplateUITestsLaunchTests.swift in Sources */,
 				DA796B46816304DB376D0F7D /* README.md in Sources */,
-				DA7276168645959D199F34AF /* AuthRepository.swift in Sources */,
 				DA7AE80049D8467AD108B740 /* User.swift in Sources */,
 				DA7FDB6609DCDB8DDB79B31B /* NetworkResult.swift in Sources */,
-				DA72796D5671083818C4302F /* LoginBody.swift in Sources */,
 				DA7430029B656E79E8B6E4DD /* RestAPI.swift in Sources */,
+				DA7BE9C2CF8DE95FF7CE7968 /* WeatherRepository.swift in Sources */,
+				DA7015E0F7008D57AA800344 /* HourlyForecastBody.swift in Sources */,
+				DA70851E2FC2827E87225C89 /* Forecast.swift in Sources */,
+				DA79877F7C863E7B040285BB /* HomeVM.swift in Sources */,
+				DA70EED8BF08874A99E828CA /* ForecastDetailVM.swift in Sources */,
+				DA756D679E2E92A8C3EE21D0 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,13 +570,19 @@
 			files = (
 				DA76E1847A3A96E4D4DDF249 /* BoilerplateApp.swift in Sources */,
 				DA7632FBB9E49EA193DC76EF /* ContentView.swift in Sources */,
-				DA76294764CFE040296A6D47 /* LoginView.swift in Sources */,
-				DA78EB2E098C2DAFCDF27131 /* AuthRepository.swift in Sources */,
 				DA7BB5739317543F53048762 /* User.swift in Sources */,
 				DA7C1653A718F0A243568EC3 /* NetworkResult.swift in Sources */,
 				DA7B5B0AD98AA2B6D13315CB /* BoilerplateRestAPI.swift in Sources */,
-				DA7C810ECB25844836FFB16C /* LoginBody.swift in Sources */,
 				DA720705BF00AB21DB1E854A /* RestAPI.swift in Sources */,
+				DA7C4E066C989E8529B9923D /* HomeView.swift in Sources */,
+				DA72FC2B050BAE96DE9D04E3 /* WeatherRepository.swift in Sources */,
+				DA73A96BEFBDC5A6752DA2F1 /* HourlyForecastBody.swift in Sources */,
+				DA7F5BBEE3304837AD7452DD /* Forecast.swift in Sources */,
+				DA78B8E50E05B43983E09BB8 /* ForecastDetailView.swift in Sources */,
+				DA741C36210A7CB4DAE03585 /* HomeVM.swift in Sources */,
+				DA765213B880E8739B6100D0 /* ForecastDetailVM.swift in Sources */,
+				DA7A6448E577D6562248535C /* NetworkError.swift in Sources */,
+				DA7483E8FE168BD704F2AEF5 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +628,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Boilerplate/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Boilerplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -638,6 +683,7 @@
 		};
 		DA79785A7AA730A3227171EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3A25AB27E808CE00E87184 /* release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -709,6 +755,7 @@
 		};
 		DA7B3ECD8474081558AC8EEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3A25A727E804F300E87184 /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -778,6 +825,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Boilerplate/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Boilerplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

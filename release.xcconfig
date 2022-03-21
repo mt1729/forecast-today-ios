@@ -1,0 +1,12 @@
+//
+//  release.xcconfig
+//  Boilerplate
+//
+//  Created by Matthew Taylor on 3/20/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY = c53c9b0713f64b40bed192102222003
+API_ROOT = https:\/\/api.weatherapi.com/v1/
