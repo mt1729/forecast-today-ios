@@ -8,23 +8,28 @@ import Foundation
 // TODO: - Swinject singleton
 class WeatherRepository {
     let api: RestAPI
-    init (restAPI api: RestAPI) {
+    let queue: DispatchQueue
+    init (dispatchQueue queue: DispatchQueue, restAPI api: RestAPI) {
         self.api = api
-        hourlyForecast = NetworkResult.pending
+        self.queue = queue
+
+        hourlyForecast = NetworkResult.empty
     }
 
+    private var disposeBag = Set<AnyCancellable>()
     @Published private(set) var hourlyForecast: NetworkResult<Forecast>
 
     func fetchHourlyForecast(zipCode: String) -> NetworkResult<Forecast> {
         hourlyForecast = NetworkResult.pending
-        do {
-            let reqBody = HourlyForecastBody(zipCode)
 
-            // let res = try await api.fetchHourlyForecast(reqBody)
-            // TODO: - Declare publisher as `success`
-        } catch {
-            hourlyForecast = NetworkResult.error(error)
-        }
+        let reqBody = ForecastRequest(zipCode)
+        api.fetchHourlyForecast(reqBody)
+                .receive(on: queue)
+                .sink {
+                    self.hourlyForecast = $0
+                }
+                .store(in: &disposeBag)
+
         return hourlyForecast
     }
 }

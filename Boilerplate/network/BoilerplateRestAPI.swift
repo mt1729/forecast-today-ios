@@ -6,6 +6,7 @@ import Combine
 import Foundation
 
 // TODO: - Swinject singleton
+// TODO: - Using `Never` can be misleading, since errors are captured in `Result.success` for `NetworkResult.error`
 struct BoilerplateRestAPI: RestAPI {
     let session: URLSession
     init(urlSession session: URLSession) {
@@ -13,14 +14,11 @@ struct BoilerplateRestAPI: RestAPI {
     }
 
     // Avoiding async/await at the moment for iOS 14 compatibility
-    func fetchHourlyForecast(_ hourlyForecastBody: HourlyForecastBody) -> Future<NetworkResult<Forecast>, Error> {
-        Future<NetworkResult<Forecast>, Error> { promise in
+    func fetchHourlyForecast(_ forecastReq: ForecastRequest) -> Future<NetworkResult<Forecast>, Never> {
+        Future<NetworkResult<Forecast>, Never> { promise in
             let params = [
-                "q": hourlyForecastBody.zipCode,
-                "aqi": "no",
+                "q": forecastReq.zipCode,
                 "key": Environment.apiKey,
-                "days": "1",
-                "alerts": "no"
             ]
 
             var urlParts = URLComponents(string: Environment.apiRoot + "forecast.json")
@@ -28,26 +26,33 @@ struct BoilerplateRestAPI: RestAPI {
                 URLQueryItem(name: $0, value: $1)
             }
             guard let url = urlParts?.url else {
-                promise(.failure(NetworkError.invalidURL))
+                promise(.success(.error(NetworkError.invalidURL)))
                 return
             }
 
-            session.dataTask(with: url) { data, response, error in
-                if let error = error {
-                    promise(.failure(error))
+            session.dataTask(with: url) { resData, res, resError in
+                if let err = resError {
+                    promise(.success(.error(err)))
                     return
                 }
 
-                guard let data = data else {
-                    promise(.failure(NetworkError.emptyResponse))
+                guard let data = resData, let statusCode = (res as? HTTPURLResponse)?.statusCode else {
+                    promise(.success(.error(NetworkError.emptyResponse)))
                     return
                 }
 
                 do {
-                    let decoded = try JSONDecoder().decode(Forecast.self, from: data)
-                    promise(.success(NetworkResult.success(decoded)))
-                } catch {
-                    promise(.failure(error))
+                    let decoded = try JSONDecoder().decode(ForecastResponse.self, from: data)
+                    if statusCode.isHTTPSuccess {
+                        // A little unintuitive to read out `.success(.success())`
+                        // May need typealias for readability
+                        promise(.success(.success(statusCode, decoded.forecast)))
+                    } else {
+                        promise(.success(.failure(statusCode)))
+                    }
+                } catch let jsonErr {
+                    promise(.success(.error(jsonErr)))
+                    print(jsonErr)
                 }
             }.resume()
         }

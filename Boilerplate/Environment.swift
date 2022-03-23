@@ -13,9 +13,11 @@ enum Environment {
     }()
 
     static let apiRoot: String = {
-        guard let value = Environment.infoDict["API_ROOT"] as? String else {
+        guard var value = Environment.infoDict["API_ROOT"] as? String else {
             fatalError("Missing plist key for 'API_ROOT'")
         }
+
+        value = value.replacingOccurrences(of: "\\", with: "")
         return value
     }()
 

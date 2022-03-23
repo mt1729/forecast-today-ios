@@ -5,7 +5,9 @@
 import Foundation
 
 enum NetworkResult<T> {
-    case success(_ result: T)
+    case empty
+    case success(_ statusCode: Int, _ result: T)
     case pending
+    case failure(_ statusCode: Int)
     case error(_ error: Error)
 }

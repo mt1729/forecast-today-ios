@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct HourlyForecastBody {
+struct ForecastRequest {
     let zipCode: String
 
     init (_ zipCode: String) {

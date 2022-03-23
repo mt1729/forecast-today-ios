@@ -7,5 +7,5 @@ import Foundation
 
 // Keep as a protocol to use for custom mocks during unit tests or other swappable implementations
 protocol RestAPI {
-    func fetchHourlyForecast(_ hourlyForecastBody: HourlyForecastBody) -> Future<NetworkResult<Forecast>, Error>
+    func fetchHourlyForecast(_ hourlyForecastBody: ForecastRequest) -> Future<NetworkResult<Forecast>, Never>
 }
