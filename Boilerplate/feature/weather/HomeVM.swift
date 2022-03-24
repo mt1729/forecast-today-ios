@@ -5,11 +5,10 @@
 import Combine
 import Foundation
 
-// TODO: - Prompt for location permission to auto-fetch user zip
-class HomeVM {
-    private static let defaultZip = "95014" // Apple HQ
+class HomeVM: ObservableObject {
     private static let debounceMs = 500
     private static let genericErrMsg = "Hmm, it looks like something went wrong on our end. Please try again later"
+    private static let emptyStateMsg = "Hourly forecast results will show up here with a valid zip code"
 
     let repo: WeatherRepository
     let queue: DispatchQueue
@@ -19,7 +18,8 @@ class HomeVM {
         self.queue = queue
 
         // Default/init VM state
-        zipCode = HomeVM.defaultZip
+        zipCode = ""
+        listMsg = ""
         isLoading = false
 
         // (Intensive) calculations from input should be done outside main queue
@@ -61,10 +61,12 @@ class HomeVM {
         repo.$todayForecastRes.receive(on: DispatchQueue.main)
                 .sink { todayForecast in
                     switch todayForecast {
+                    case .empty:
+                        self.listMsg = HomeVM.emptyStateMsg
                     case .pending:
-                        self.errorMsg = nil
+                        self.listMsg = ""
                     case .failure, .error:
-                        self.errorMsg = HomeVM.genericErrMsg
+                        self.listMsg = HomeVM.genericErrMsg
                     default:
                         break
                     }
@@ -73,8 +75,8 @@ class HomeVM {
     }
 
     private var disposeBag = Set<AnyCancellable>()
-    @Published private(set) var zipCode: String
+    @Published var zipCode: String
+    @Published private(set) var listMsg: String
     @Published private(set) var forecast: Forecast?
-    @Published private(set) var errorMsg: String?
     @Published private(set) var isLoading: Bool
 }

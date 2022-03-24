@@ -4,13 +4,13 @@
 
 import Foundation
 
+// TODO: - Move any commonly used structs (outside of networking) to `model` folder
 struct ForecastResponse: Codable {
     let location: Location
     let current: Current
     let forecast: Forecast
 }
 
-// MARK: - Current
 struct Current: Codable {
     let lastUpdatedEpoch: Int
     let lastUpdated: String
@@ -118,7 +118,17 @@ struct Day: Codable {
     }
 }
 
-struct Hour: Codable {
+struct Hour: Codable, Identifiable, Hashable {
+    let id = UUID()
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func ==(lhs: Hour, rhs: Hour) -> Bool {
+        lhs.id == rhs.id
+    }
+
     let timeEpoch: Int
     let time: String
     let tempC, tempF: Double
