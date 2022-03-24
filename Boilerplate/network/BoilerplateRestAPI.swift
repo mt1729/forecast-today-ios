@@ -6,7 +6,7 @@ import Combine
 import Foundation
 
 // TODO: - Swinject singleton
-// TODO: - Using `Never` can be misleading, since errors are captured in `Result.success` for `NetworkResult.error`
+// NOTE: - Using `Never` can be misleading, since errors are captured in `Result.success` for `NetworkResult.error`
 struct BoilerplateRestAPI: RestAPI {
     let session: URLSession
     init(urlSession session: URLSession) {
@@ -14,11 +14,11 @@ struct BoilerplateRestAPI: RestAPI {
     }
 
     // Avoiding async/await at the moment for iOS 14 compatibility
-    func fetchHourlyForecast(_ forecastReq: ForecastRequest) -> Future<NetworkResult<Forecast>, Never> {
-        Future<NetworkResult<Forecast>, Never> { promise in
+    func fetchHourlyForecast(_ forecastReq: ForecastRequest) -> Future<NetworkResult<ForecastResponse>, Never> {
+        Future<NetworkResult<ForecastResponse>, Never> { promise in
             let params = [
                 "q": forecastReq.zipCode,
-                "key": Environment.apiKey,
+                "key": Environment.apiKey
             ]
 
             var urlParts = URLComponents(string: Environment.apiRoot + "forecast.json")
@@ -46,7 +46,7 @@ struct BoilerplateRestAPI: RestAPI {
                     if statusCode.isHTTPSuccess {
                         // A little unintuitive to read out `.success(.success())`
                         // May need typealias for readability
-                        promise(.success(.success(statusCode, decoded.forecast)))
+                        promise(.success(.success(statusCode, decoded)))
                     } else {
                         promise(.success(.failure(statusCode)))
                     }

@@ -13,23 +13,19 @@ class WeatherRepository {
         self.api = api
         self.queue = queue
 
-        hourlyForecast = NetworkResult.empty
+        todayForecastRes = NetworkResult.empty
     }
 
     private var disposeBag = Set<AnyCancellable>()
-    @Published private(set) var hourlyForecast: NetworkResult<Forecast>
+    @Published private(set) var todayForecastRes: NetworkResult<ForecastResponse>
 
-    func fetchHourlyForecast(zipCode: String) -> NetworkResult<Forecast> {
-        hourlyForecast = NetworkResult.pending
+    func fetchTodayForecast(zipCode: String) {
+        todayForecastRes = NetworkResult.pending
 
         let reqBody = ForecastRequest(zipCode)
         api.fetchHourlyForecast(reqBody)
                 .receive(on: queue)
-                .sink {
-                    self.hourlyForecast = $0
-                }
+                .sink { self.todayForecastRes = $0 }
                 .store(in: &disposeBag)
-
-        return hourlyForecast
     }
 }
