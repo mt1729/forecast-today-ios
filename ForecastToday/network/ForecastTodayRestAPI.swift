@@ -6,10 +6,10 @@ import Combine
 import Foundation
 
 // NOTE: - Using `Never` can be misleading, since errors are captured in `Result.success` for `NetworkResult.error`
-class BoilerplateRestAPI: RestAPI, ObservableObject {
+class ForecastTodayRestAPI: RestAPI, ObservableObject {
     let session: URLSession
     init(urlSession session: URLSession) {
-        print("init BoilerplateRestAPI")
+        print("init ForecastTodayRestAPI")
         self.session = session
     }
 

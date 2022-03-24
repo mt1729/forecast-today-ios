@@ -3,19 +3,19 @@
 source 'https://cdn.cocoapods.org/'
 platform :ios, '15.0'
 
-target 'Boilerplate' do
+target 'ForecastToday' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Boilerplate
+  # Pods for ForecastToday
   pod 'SwiftLint'
 
-  target 'BoilerplateTests' do
+  target 'ForecastTodayTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'BoilerplateUITests' do
+  target 'ForecastTodayUITests' do
     # Pods for testing
   end
 end

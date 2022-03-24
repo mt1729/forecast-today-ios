@@ -1,6 +1,6 @@
 //
-//  BoilerplateUITestsLaunchTests.swift
-//  BoilerplateUITests
+//  ForecastTodayUITestsLaunchTests.swift
+//  ForecastTodayUITests
 //
 //  Created by Matthew Taylor on 3/18/22.
 //
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class BoilerplateUITestsLaunchTests: XCTestCase {
+class ForecastTodayUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FD843270ADFE44F70549EB6 /* Pods_Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2C33650E750F49CE4BD418 /* Pods_Boilerplate.framework */; };
-		6C3F79FEFA8042B8E248C756 /* Pods_Boilerplate_BoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3FE457EAC93F0795DE86BF /* Pods_Boilerplate_BoilerplateUITests.framework */; };
+		4628D0A046F847B52E691CE3 /* Pods_ForecastToday_ForecastTodayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538359265A488B91438152C3 /* Pods_ForecastToday_ForecastTodayUITests.framework */; };
 		DA7015E0F7008D57AA800344 /* ForecastRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BFD193C47098C467FA7BC /* ForecastRequest.swift */; };
 		DA71642C50198E5BF4CCFCCF /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA775DCFE8838D5A7D9BF67E /* URLSessionExtensions.swift */; };
 		DA71766DF418FE8CF41888C4 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE922E4F64F27502A9875 /* IntExtensions.swift */; };
@@ -32,25 +31,25 @@
 		DA760D531847A7ADDA188397 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA7FC743E2E545E7483B3FDE /* .gitignore */; };
 		DA7632FBB9E49EA193DC76EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77815E12E4657CDB768E89 /* ContentView.swift */; };
 		DA766FB9205947E23AE077CF /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7477BE9DDD0B21C6648339 /* ForecastResponse.swift */; };
-		DA76E1847A3A96E4D4DDF249 /* BoilerplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE31DBFB7ECBD8BD494F6 /* BoilerplateApp.swift */; };
+		DA76E1847A3A96E4D4DDF249 /* ForecastTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE31DBFB7ECBD8BD494F6 /* ForecastTodayApp.swift */; };
 		DA788F6AF6248E7BC12332E4 /* ForecastRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BFD193C47098C467FA7BC /* ForecastRequest.swift */; };
 		DA789ED5A120884ABC0CDD3A /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE922E4F64F27502A9875 /* IntExtensions.swift */; };
 		DA78B8E50E05B43983E09BB8 /* ForecastDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A8E63AC3AC1205C1041E7 /* ForecastDetailView.swift */; };
 		DA796B46816304DB376D0F7D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DA729A66F0485B07F34CEA70 /* README.md */; };
 		DA79877F7C863E7B040285BB /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74BAFB8ED798423FAF94B9 /* HomeVM.swift */; };
 		DA79985E1DA756694131F653 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7477BE9DDD0B21C6648339 /* ForecastResponse.swift */; };
-		DA79E3A1F5D435E19FF7E47B /* BoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7810A60FF7890A5C7A591D /* BoilerplateUITests.swift */; };
+		DA79E3A1F5D435E19FF7E47B /* ForecastTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7810A60FF7890A5C7A591D /* ForecastTodayUITests.swift */; };
 		DA7A6448E577D6562248535C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */; };
 		DA7AF87250FA3FF471BF5F72 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7477BE9DDD0B21C6648339 /* ForecastResponse.swift */; };
-		DA7B5B0AD98AA2B6D13315CB /* BoilerplateRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711A13ACAB725788CCB59B /* BoilerplateRestAPI.swift */; };
+		DA7B5B0AD98AA2B6D13315CB /* ForecastTodayRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA711A13ACAB725788CCB59B /* ForecastTodayRestAPI.swift */; };
 		DA7BE9C2CF8DE95FF7CE7968 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A8B575DE1E4CB0D1B353B /* WeatherRepository.swift */; };
 		DA7C1653A718F0A243568EC3 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */; };
 		DA7C4E066C989E8529B9923D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77C0909BA36B249C4F54D1 /* HomeView.swift */; };
 		DA7D42616E1642D70069EC3E /* DispatchQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA759A1F053720B6D59FA500 /* DispatchQueueExtensions.swift */; };
-		DA7D872EBAB6FAD34458D18E /* BoilerplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D20EF37ED1715C87864EB /* BoilerplateUITestsLaunchTests.swift */; };
+		DA7D872EBAB6FAD34458D18E /* ForecastTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D20EF37ED1715C87864EB /* ForecastTodayUITestsLaunchTests.swift */; };
 		DA7DA2C043C358083D348712 /* DispatchQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA759A1F053720B6D59FA500 /* DispatchQueueExtensions.swift */; };
 		DA7DD864C934FEACD64225AC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DA725D3F3594537780BA6642 /* .swiftlint.yml */; };
-		DA7DE6C54F445E78FF7295D6 /* BoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76444820248590F0E8014A /* BoilerplateTests.swift */; };
+		DA7DE6C54F445E78FF7295D6 /* ForecastTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76444820248590F0E8014A /* ForecastTodayTests.swift */; };
 		DA7E85732D52F7FD4CAF973D /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA775DCFE8838D5A7D9BF67E /* URLSessionExtensions.swift */; };
 		DA7EA2E5AA767045D4B94D91 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DA725D3F3594537780BA6642 /* .swiftlint.yml */; };
 		DA7ED79C47B42C3E84C4CE7A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA7FC743E2E545E7483B3FDE /* .gitignore */; };
@@ -58,7 +57,8 @@
 		DA7FC168C0FD07823F46E277 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EE922E4F64F27502A9875 /* IntExtensions.swift */; };
 		DA7FDA0CB097913767356082 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A8B575DE1E4CB0D1B353B /* WeatherRepository.swift */; };
 		DA7FDB6609DCDB8DDB79B31B /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */; };
-		EC9970C053D26ADFFC3BEFC8 /* Pods_BoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370F1BABBD1AD7CAD6F0D51E /* Pods_BoilerplateTests.framework */; };
+		F17057D5CCBA26FA082403B3 /* Pods_ForecastTodayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799029546A13B31418399ED4 /* Pods_ForecastTodayTests.framework */; };
+		F64C4C039C7F09D18897C8D1 /* Pods_ForecastToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067D366A0ED716001B6BD9C7 /* Pods_ForecastToday.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,56 +67,56 @@
 			containerPortal = DA7B12F2BC2ACAB03CE27F34 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA7857F019C5C01E7F29CCCA;
-			remoteInfo = Boilerplate;
+			remoteInfo = ForecastToday;
 		};
 		DA7BF6501D99162CDB6B37D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA7B12F2BC2ACAB03CE27F34 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA7857F019C5C01E7F29CCCA;
-			remoteInfo = Boilerplate;
+			remoteInfo = ForecastToday;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A3FE457EAC93F0795DE86BF /* Pods_Boilerplate_BoilerplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilerplate_BoilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		241408CA0F7B5A6ABA950E73 /* Pods-BoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-BoilerplateTests/Pods-BoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		253403978DC7B0F1EFDF449C /* Pods-BoilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-BoilerplateTests/Pods-BoilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		370F1BABBD1AD7CAD6F0D51E /* Pods_BoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E54E64768FB8CCBD52790A9 /* Pods-Boilerplate-BoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate-BoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-Boilerplate-BoilerplateUITests/Pods-Boilerplate-BoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6D2C33650E750F49CE4BD418 /* Pods_Boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		067D366A0ED716001B6BD9C7 /* Pods_ForecastToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C74B63AE731B93338DAE01C /* Pods-ForecastTodayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastTodayTests.release.xcconfig"; path = "Target Support Files/Pods-ForecastTodayTests/Pods-ForecastTodayTests.release.xcconfig"; sourceTree = "<group>"; };
+		390F1EF2D6118151B22416CE /* Pods-ForecastTodayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastTodayTests.debug.xcconfig"; path = "Target Support Files/Pods-ForecastTodayTests/Pods-ForecastTodayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50E6B271B9437536558250E6 /* Pods-ForecastToday-ForecastTodayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastToday-ForecastTodayUITests.release.xcconfig"; path = "Target Support Files/Pods-ForecastToday-ForecastTodayUITests/Pods-ForecastToday-ForecastTodayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		538359265A488B91438152C3 /* Pods_ForecastToday_ForecastTodayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastToday_ForecastTodayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3A25A727E804F300E87184 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		6E3A25AB27E808CE00E87184 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
-		A9C5A2E13FCEA3DFBC7513A6 /* Pods-Boilerplate-BoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate-BoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-Boilerplate-BoilerplateUITests/Pods-Boilerplate-BoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B519B94D7C358E800837BCB9 /* Pods-Boilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate.debug.xcconfig"; path = "Target Support Files/Pods-Boilerplate/Pods-Boilerplate.debug.xcconfig"; sourceTree = "<group>"; };
-		DA711A13ACAB725788CCB59B /* BoilerplateRestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoilerplateRestAPI.swift; sourceTree = "<group>"; };
+		73C73CDD214AD7768132EF9E /* Pods-ForecastToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastToday.release.xcconfig"; path = "Target Support Files/Pods-ForecastToday/Pods-ForecastToday.release.xcconfig"; sourceTree = "<group>"; };
+		799029546A13B31418399ED4 /* Pods_ForecastTodayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastTodayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB1F023D037D0DD7449F4B2 /* Pods-ForecastToday-ForecastTodayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastToday-ForecastTodayUITests.debug.xcconfig"; path = "Target Support Files/Pods-ForecastToday-ForecastTodayUITests/Pods-ForecastToday-ForecastTodayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA711A13ACAB725788CCB59B /* ForecastTodayRestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTodayRestAPI.swift; sourceTree = "<group>"; };
 		DA72269125FB2B4C983B6839 /* RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		DA725D3F3594537780BA6642 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DA729A66F0485B07F34CEA70 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
-		DA73F6D6A66F9A540FA73D85 /* BoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA73F6D6A66F9A540FA73D85 /* ForecastTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA745D08BE3AA28494AFA5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA7477BE9DDD0B21C6648339 /* ForecastResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
 		DA74BAFB8ED798423FAF94B9 /* HomeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		DA759A1F053720B6D59FA500 /* DispatchQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtensions.swift; sourceTree = "<group>"; };
-		DA76444820248590F0E8014A /* BoilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateTests.swift; sourceTree = "<group>"; };
+		DA76444820248590F0E8014A /* ForecastTodayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTodayTests.swift; sourceTree = "<group>"; };
 		DA775DCFE8838D5A7D9BF67E /* URLSessionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionExtensions.swift; sourceTree = "<group>"; };
 		DA77815E12E4657CDB768E89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA77C0909BA36B249C4F54D1 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		DA7810A60FF7890A5C7A591D /* BoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateUITests.swift; sourceTree = "<group>"; };
+		DA7810A60FF7890A5C7A591D /* ForecastTodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTodayUITests.swift; sourceTree = "<group>"; };
 		DA79869624FAE12C10E9614E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA7A37178B5F83976E4EACE7 /* Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7A37178B5F83976E4EACE7 /* ForecastToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForecastToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7A8B575DE1E4CB0D1B353B /* WeatherRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		DA7A8E63AC3AC1205C1041E7 /* ForecastDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDetailView.swift; sourceTree = "<group>"; };
-		DA7B2132366640E6D97F99A6 /* BoilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoilerplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7B2132366640E6D97F99A6 /* ForecastTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7BFD193C47098C467FA7BC /* ForecastRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastRequest.swift; sourceTree = "<group>"; };
 		DA7C899BA7FCEF51ACFB2AAE /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		DA7D20EF37ED1715C87864EB /* BoilerplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DA7DE31DBFB7ECBD8BD494F6 /* BoilerplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateApp.swift; sourceTree = "<group>"; };
+		DA7D20EF37ED1715C87864EB /* ForecastTodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA7DE31DBFB7ECBD8BD494F6 /* ForecastTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTodayApp.swift; sourceTree = "<group>"; };
 		DA7EE922E4F64F27502A9875 /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		DA7FC743E2E545E7483B3FDE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
-		EB177C14787451DC0665BF48 /* Pods-Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Boilerplate/Pods-Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
+		DFB485C1272EA5418CEE33C8 /* Pods-ForecastToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastToday.debug.xcconfig"; path = "Target Support Files/Pods-ForecastToday/Pods-ForecastToday.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9970C053D26ADFFC3BEFC8 /* Pods_BoilerplateTests.framework in Frameworks */,
+				F17057D5CCBA26FA082403B3 /* Pods_ForecastTodayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C3F79FEFA8042B8E248C756 /* Pods_Boilerplate_BoilerplateUITests.framework in Frameworks */,
+				4628D0A046F847B52E691CE3 /* Pods_ForecastToday_ForecastTodayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD843270ADFE44F70549EB6 /* Pods_Boilerplate.framework in Frameworks */,
+				F64C4C039C7F09D18897C8D1 /* Pods_ForecastToday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,12 +150,12 @@
 		2A1B599D6D4F9CB3566E3FAE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B519B94D7C358E800837BCB9 /* Pods-Boilerplate.debug.xcconfig */,
-				EB177C14787451DC0665BF48 /* Pods-Boilerplate.release.xcconfig */,
-				A9C5A2E13FCEA3DFBC7513A6 /* Pods-Boilerplate-BoilerplateUITests.debug.xcconfig */,
-				5E54E64768FB8CCBD52790A9 /* Pods-Boilerplate-BoilerplateUITests.release.xcconfig */,
-				253403978DC7B0F1EFDF449C /* Pods-BoilerplateTests.debug.xcconfig */,
-				241408CA0F7B5A6ABA950E73 /* Pods-BoilerplateTests.release.xcconfig */,
+				DFB485C1272EA5418CEE33C8 /* Pods-ForecastToday.debug.xcconfig */,
+				73C73CDD214AD7768132EF9E /* Pods-ForecastToday.release.xcconfig */,
+				9CB1F023D037D0DD7449F4B2 /* Pods-ForecastToday-ForecastTodayUITests.debug.xcconfig */,
+				50E6B271B9437536558250E6 /* Pods-ForecastToday-ForecastTodayUITests.release.xcconfig */,
+				390F1EF2D6118151B22416CE /* Pods-ForecastTodayTests.debug.xcconfig */,
+				1C74B63AE731B93338DAE01C /* Pods-ForecastTodayTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 				6E3A25AB27E808CE00E87184 /* release.xcconfig */,
 				6E3A25A727E804F300E87184 /* debug.xcconfig */,
 				DA7F17C865270A8D1AD7F4E1 /* Products */,
-				DA7B97218825ABAE9CA09666 /* Boilerplate */,
-				DA7C37295E0AF0209E4E10DF /* BoilerplateTests */,
-				DA7C2517A002ECC5205BC187 /* BoilerplateUITests */,
+				DA7B97218825ABAE9CA09666 /* ForecastToday */,
+				DA7C37295E0AF0209E4E10DF /* ForecastTodayTests */,
+				DA7C2517A002ECC5205BC187 /* ForecastTodayUITests */,
 				DA7FC743E2E545E7483B3FDE /* .gitignore */,
 				DA729A66F0485B07F34CEA70 /* README.md */,
 				2A1B599D6D4F9CB3566E3FAE /* Pods */,
@@ -200,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */,
-				DA711A13ACAB725788CCB59B /* BoilerplateRestAPI.swift */,
+				DA711A13ACAB725788CCB59B /* ForecastTodayRestAPI.swift */,
 				DA72269125FB2B4C983B6839 /* RestAPI.swift */,
 				DA74B17740BA5E03A2CF8D17 /* request */,
 				DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */,
@@ -243,44 +243,44 @@
 			path = response;
 			sourceTree = "<group>";
 		};
-		DA7B97218825ABAE9CA09666 /* Boilerplate */ = {
+		DA7B97218825ABAE9CA09666 /* ForecastToday */ = {
 			isa = PBXGroup;
 			children = (
 				DA745D08BE3AA28494AFA5E5 /* Assets.xcassets */,
 				DA76EA3E3ECF3172EECB4032 /* Preview Content */,
-				DA7DE31DBFB7ECBD8BD494F6 /* BoilerplateApp.swift */,
+				DA7DE31DBFB7ECBD8BD494F6 /* ForecastTodayApp.swift */,
 				DA77815E12E4657CDB768E89 /* ContentView.swift */,
 				DA785423C7C7BF371612A7F6 /* feature */,
 				DA7551001C9400CFD349B47C /* network */,
 				DA7C899BA7FCEF51ACFB2AAE /* Environment.swift */,
 				DA79193B9595B34310922A68 /* extensions */,
 			);
-			path = Boilerplate;
+			path = ForecastToday;
 			sourceTree = "<group>";
 		};
-		DA7C2517A002ECC5205BC187 /* BoilerplateUITests */ = {
+		DA7C2517A002ECC5205BC187 /* ForecastTodayUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DA7810A60FF7890A5C7A591D /* BoilerplateUITests.swift */,
-				DA7D20EF37ED1715C87864EB /* BoilerplateUITestsLaunchTests.swift */,
+				DA7810A60FF7890A5C7A591D /* ForecastTodayUITests.swift */,
+				DA7D20EF37ED1715C87864EB /* ForecastTodayUITestsLaunchTests.swift */,
 			);
-			path = BoilerplateUITests;
+			path = ForecastTodayUITests;
 			sourceTree = "<group>";
 		};
-		DA7C37295E0AF0209E4E10DF /* BoilerplateTests */ = {
+		DA7C37295E0AF0209E4E10DF /* ForecastTodayTests */ = {
 			isa = PBXGroup;
 			children = (
-				DA76444820248590F0E8014A /* BoilerplateTests.swift */,
+				DA76444820248590F0E8014A /* ForecastTodayTests.swift */,
 			);
-			path = BoilerplateTests;
+			path = ForecastTodayTests;
 			sourceTree = "<group>";
 		};
 		DA7F17C865270A8D1AD7F4E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA7A37178B5F83976E4EACE7 /* Boilerplate.app */,
-				DA73F6D6A66F9A540FA73D85 /* BoilerplateTests.xctest */,
-				DA7B2132366640E6D97F99A6 /* BoilerplateUITests.xctest */,
+				DA7A37178B5F83976E4EACE7 /* ForecastToday.app */,
+				DA73F6D6A66F9A540FA73D85 /* ForecastTodayTests.xctest */,
+				DA7B2132366640E6D97F99A6 /* ForecastTodayUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,9 +288,9 @@
 		F27264A88B7B11B023E87533 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D2C33650E750F49CE4BD418 /* Pods_Boilerplate.framework */,
-				0A3FE457EAC93F0795DE86BF /* Pods_Boilerplate_BoilerplateUITests.framework */,
-				370F1BABBD1AD7CAD6F0D51E /* Pods_BoilerplateTests.framework */,
+				067D366A0ED716001B6BD9C7 /* Pods_ForecastToday.framework */,
+				538359265A488B91438152C3 /* Pods_ForecastToday_ForecastTodayUITests.framework */,
+				799029546A13B31418399ED4 /* Pods_ForecastTodayTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -298,9 +298,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA75DBB38E3338C47ED61435 /* BoilerplateTests */ = {
+		DA75DBB38E3338C47ED61435 /* ForecastTodayTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA7F497863E765531A6C52CC /* Build configuration list for PBXNativeTarget "BoilerplateTests" */;
+			buildConfigurationList = DA7F497863E765531A6C52CC /* Build configuration list for PBXNativeTarget "ForecastTodayTests" */;
 			buildPhases = (
 				A0BC8346B9913D7D249B4121 /* [CP] Check Pods Manifest.lock */,
 				DA7ABB4FACD9437B2ECC14D9 /* Sources */,
@@ -312,14 +312,14 @@
 			dependencies = (
 				DA79B353A43181872F022591 /* PBXTargetDependency */,
 			);
-			name = BoilerplateTests;
-			productName = BoilerplateTests;
-			productReference = DA73F6D6A66F9A540FA73D85 /* BoilerplateTests.xctest */;
+			name = ForecastTodayTests;
+			productName = ForecastTodayTests;
+			productReference = DA73F6D6A66F9A540FA73D85 /* ForecastTodayTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DA7857F019C5C01E7F29CCCA /* Boilerplate */ = {
+		DA7857F019C5C01E7F29CCCA /* ForecastToday */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA7C5FEFBAC54CBB6B717047 /* Build configuration list for PBXNativeTarget "Boilerplate" */;
+			buildConfigurationList = DA7C5FEFBAC54CBB6B717047 /* Build configuration list for PBXNativeTarget "ForecastToday" */;
 			buildPhases = (
 				F2249B4A0C423C90F8A248BD /* [CP] Check Pods Manifest.lock */,
 				DA7FAD93FB2D1BD5CB9BF5C7 /* Sources */,
@@ -331,14 +331,14 @@
 			);
 			dependencies = (
 			);
-			name = Boilerplate;
-			productName = Boilerplate;
-			productReference = DA7A37178B5F83976E4EACE7 /* Boilerplate.app */;
+			name = ForecastToday;
+			productName = ForecastToday;
+			productReference = DA7A37178B5F83976E4EACE7 /* ForecastToday.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA7F9B4C4A60DD23AB97606B /* BoilerplateUITests */ = {
+		DA7F9B4C4A60DD23AB97606B /* ForecastTodayUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA7117DB35FE52E934AFBB0A /* Build configuration list for PBXNativeTarget "BoilerplateUITests" */;
+			buildConfigurationList = DA7117DB35FE52E934AFBB0A /* Build configuration list for PBXNativeTarget "ForecastTodayUITests" */;
 			buildPhases = (
 				36E6D11E373825D42D676335 /* [CP] Check Pods Manifest.lock */,
 				DA7B2BA347DACCD4598C529C /* Sources */,
@@ -350,9 +350,9 @@
 			dependencies = (
 				DA7FA73F12FFFB7C5AF408C7 /* PBXTargetDependency */,
 			);
-			name = BoilerplateUITests;
-			productName = BoilerplateUITests;
-			productReference = DA7B2132366640E6D97F99A6 /* BoilerplateUITests.xctest */;
+			name = ForecastTodayUITests;
+			productName = ForecastTodayUITests;
+			productReference = DA7B2132366640E6D97F99A6 /* ForecastTodayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -363,7 +363,7 @@
 			attributes = {
 				LastUpgradeCheck = 1330;
 			};
-			buildConfigurationList = DA7356F1179C76197073DD6B /* Build configuration list for PBXProject "Boilerplate" */;
+			buildConfigurationList = DA7356F1179C76197073DD6B /* Build configuration list for PBXProject "ForecastToday" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -376,9 +376,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA7857F019C5C01E7F29CCCA /* Boilerplate */,
-				DA75DBB38E3338C47ED61435 /* BoilerplateTests */,
-				DA7F9B4C4A60DD23AB97606B /* BoilerplateUITests */,
+				DA7857F019C5C01E7F29CCCA /* ForecastToday */,
+				DA75DBB38E3338C47ED61435 /* ForecastTodayTests */,
+				DA7F9B4C4A60DD23AB97606B /* ForecastTodayUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -431,7 +431,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Boilerplate-BoilerplateUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ForecastToday-ForecastTodayUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -470,7 +470,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BoilerplateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ForecastTodayTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,7 +492,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Boilerplate-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ForecastToday-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -506,7 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7DE6C54F445E78FF7295D6 /* BoilerplateTests.swift in Sources */,
+				DA7DE6C54F445E78FF7295D6 /* ForecastTodayTests.swift in Sources */,
 				DA7327F1DDF48A78553A8D6E /* README.md in Sources */,
 				DA758E346BF0A43C9EC2C12B /* NetworkResult.swift in Sources */,
 				DA7F14C16C402C9CE7EF9245 /* RestAPI.swift in Sources */,
@@ -525,8 +525,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA79E3A1F5D435E19FF7E47B /* BoilerplateUITests.swift in Sources */,
-				DA7D872EBAB6FAD34458D18E /* BoilerplateUITestsLaunchTests.swift in Sources */,
+				DA79E3A1F5D435E19FF7E47B /* ForecastTodayUITests.swift in Sources */,
+				DA7D872EBAB6FAD34458D18E /* ForecastTodayUITestsLaunchTests.swift in Sources */,
 				DA796B46816304DB376D0F7D /* README.md in Sources */,
 				DA7FDB6609DCDB8DDB79B31B /* NetworkResult.swift in Sources */,
 				DA7430029B656E79E8B6E4DD /* RestAPI.swift in Sources */,
@@ -545,10 +545,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA76E1847A3A96E4D4DDF249 /* BoilerplateApp.swift in Sources */,
+				DA76E1847A3A96E4D4DDF249 /* ForecastTodayApp.swift in Sources */,
 				DA7632FBB9E49EA193DC76EF /* ContentView.swift in Sources */,
 				DA7C1653A718F0A243568EC3 /* NetworkResult.swift in Sources */,
-				DA7B5B0AD98AA2B6D13315CB /* BoilerplateRestAPI.swift in Sources */,
+				DA7B5B0AD98AA2B6D13315CB /* ForecastTodayRestAPI.swift in Sources */,
 				DA720705BF00AB21DB1E854A /* RestAPI.swift in Sources */,
 				DA7C4E066C989E8529B9923D /* HomeView.swift in Sources */,
 				DA72FC2B050BAE96DE9D04E3 /* WeatherRepository.swift in Sources */,
@@ -569,12 +569,12 @@
 /* Begin PBXTargetDependency section */
 		DA79B353A43181872F022591 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA7857F019C5C01E7F29CCCA /* Boilerplate */;
+			target = DA7857F019C5C01E7F29CCCA /* ForecastToday */;
 			targetProxy = DA749DC24DBD0F595D130C84 /* PBXContainerItemProxy */;
 		};
 		DA7FA73F12FFFB7C5AF408C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA7857F019C5C01E7F29CCCA /* Boilerplate */;
+			target = DA7857F019C5C01E7F29CCCA /* ForecastToday */;
 			targetProxy = DA7BF6501D99162CDB6B37D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -582,31 +582,31 @@
 /* Begin XCBuildConfiguration section */
 		DA730B2477EE3D1F3F7CA0C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9C5A2E13FCEA3DFBC7513A6 /* Pods-Boilerplate-BoilerplateUITests.debug.xcconfig */;
+			baseConfigurationReference = 9CB1F023D037D0DD7449F4B2 /* Pods-ForecastToday-ForecastTodayUITests.debug.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.BoilerplateUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.ForecastTodayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Boilerplate;
+				TEST_TARGET_NAME = ForecastToday;
 			};
 			name = Debug;
 		};
 		DA73123BBFDD3F752A57FD54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B519B94D7C358E800837BCB9 /* Pods-Boilerplate.debug.xcconfig */;
+			baseConfigurationReference = DFB485C1272EA5418CEE33C8 /* Pods-ForecastToday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Boilerplate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ForecastToday/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Boilerplate/Info.plist;
+				INFOPLIST_FILE = ForecastToday/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -618,7 +618,7 @@
 					"\"-Xlinker -interposable\"",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.Boilerplate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.ForecastToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -628,13 +628,13 @@
 		};
 		DA7648F7A8EB00BC3E3486E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 241408CA0F7B5A6ABA950E73 /* Pods-BoilerplateTests.release.xcconfig */;
+			baseConfigurationReference = 1C74B63AE731B93338DAE01C /* Pods-ForecastTodayTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ForecastToday.app/ForecastToday";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.BoilerplateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.ForecastTodayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -645,17 +645,17 @@
 		};
 		DA786FB09A5184B784E1759D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E54E64768FB8CCBD52790A9 /* Pods-Boilerplate-BoilerplateUITests.release.xcconfig */;
+			baseConfigurationReference = 50E6B271B9437536558250E6 /* Pods-ForecastToday-ForecastTodayUITests.release.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.BoilerplateUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.ForecastTodayUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Boilerplate;
+				TEST_TARGET_NAME = ForecastToday;
 			};
 			name = Release;
 		};
@@ -716,13 +716,13 @@
 		};
 		DA7AB8BAB15871FF0CD7D8FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 253403978DC7B0F1EFDF449C /* Pods-BoilerplateTests.debug.xcconfig */;
+			baseConfigurationReference = 390F1EF2D6118151B22416CE /* Pods-ForecastTodayTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Boilerplate.app/Boilerplate";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ForecastToday.app/ForecastToday";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.BoilerplateTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.ForecastTodayTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -795,15 +795,15 @@
 		};
 		DA7CB954EE1AA165A9412CB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB177C14787451DC0665BF48 /* Pods-Boilerplate.release.xcconfig */;
+			baseConfigurationReference = 73C73CDD214AD7768132EF9E /* Pods-ForecastToday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Boilerplate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ForecastToday/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Boilerplate/Info.plist;
+				INFOPLIST_FILE = ForecastToday/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -815,7 +815,7 @@
 					"\"-Xlinker -interposable\"",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.Boilerplate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.ForecastToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -826,7 +826,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA7117DB35FE52E934AFBB0A /* Build configuration list for PBXNativeTarget "BoilerplateUITests" */ = {
+		DA7117DB35FE52E934AFBB0A /* Build configuration list for PBXNativeTarget "ForecastTodayUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA730B2477EE3D1F3F7CA0C7 /* Debug */,
@@ -835,7 +835,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA7356F1179C76197073DD6B /* Build configuration list for PBXProject "Boilerplate" */ = {
+		DA7356F1179C76197073DD6B /* Build configuration list for PBXProject "ForecastToday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA7B3ECD8474081558AC8EEC /* Debug */,
@@ -844,7 +844,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA7C5FEFBAC54CBB6B717047 /* Build configuration list for PBXNativeTarget "Boilerplate" */ = {
+		DA7C5FEFBAC54CBB6B717047 /* Build configuration list for PBXNativeTarget "ForecastToday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA73123BBFDD3F752A57FD54 /* Debug */,
@@ -853,7 +853,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA7F497863E765531A6C52CC /* Build configuration list for PBXNativeTarget "BoilerplateTests" */ = {
+		DA7F497863E765531A6C52CC /* Build configuration list for PBXNativeTarget "ForecastTodayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA7AB8BAB15871FF0CD7D8FD /* Debug */,

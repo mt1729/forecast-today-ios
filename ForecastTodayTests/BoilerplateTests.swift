@@ -1,15 +1,15 @@
 //
-//  BoilerplateTests.swift
-//  BoilerplateTests
+//  ForecastTodayTests.swift
+//  ForecastTodayTests
 //
 //  Created by Matthew Taylor on 3/18/22.
 //
 //
 
 import XCTest
-@testable import Boilerplate
+@testable import ForecastToday
 
-class BoilerplateTests: XCTestCase {
+class ForecastTodayTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
