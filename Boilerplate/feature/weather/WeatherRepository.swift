@@ -5,14 +5,14 @@
 import Combine
 import Foundation
 
-// TODO: - Swinject singleton
-class WeatherRepository {
+class WeatherRepository: ObservableObject {
     let api: RestAPI
     let queue: DispatchQueue
     init (dispatchQueue queue: DispatchQueue, restAPI api: RestAPI) {
         self.api = api
         self.queue = queue
 
+        print("init WeatherRepository")
         todayForecastRes = NetworkResult.empty
     }
 

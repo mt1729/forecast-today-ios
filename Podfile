@@ -8,7 +8,6 @@ target 'Boilerplate' do
   use_frameworks!
 
   # Pods for Boilerplate
-  pod 'Swinject'
   pod 'SwiftLint'
 
   target 'BoilerplateTests' do

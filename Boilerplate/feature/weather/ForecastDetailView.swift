@@ -6,7 +6,14 @@ import SwiftUI
 import Foundation
 
 struct ForecastDetailView: View {
+    let forecastHour: Hour
+    init(forecastHour: Hour) {
+        self.forecastHour = forecastHour
+    }
+
     var body: some View {
-        Text("ForecastDetailView")
+        NavigationView {
+            Text("ForecastDetailView")
+        }
     }
 }

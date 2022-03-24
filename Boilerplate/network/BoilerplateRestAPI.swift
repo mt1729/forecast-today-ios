@@ -5,17 +5,17 @@
 import Combine
 import Foundation
 
-// TODO: - Swinject singleton
 // NOTE: - Using `Never` can be misleading, since errors are captured in `Result.success` for `NetworkResult.error`
-struct BoilerplateRestAPI: RestAPI {
+class BoilerplateRestAPI: RestAPI, ObservableObject {
     let session: URLSession
     init(urlSession session: URLSession) {
+        print("init BoilerplateRestAPI")
         self.session = session
     }
 
     // Avoiding async/await at the moment for iOS 14 compatibility
     func fetchHourlyForecast(_ forecastReq: ForecastRequest) -> Future<NetworkResult<ForecastResponse>, Never> {
-        Future<NetworkResult<ForecastResponse>, Never> { promise in
+        Future<NetworkResult<ForecastResponse>, Never> { [self] promise in
             let params = [
                 "q": forecastReq.zipCode,
                 "key": Environment.apiKey

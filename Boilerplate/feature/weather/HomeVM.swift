@@ -35,7 +35,6 @@ class HomeVM: ObservableObject {
 
         repo.$todayForecastRes.receive(on: DispatchQueue.main)
                 .sink {
-                    // TODO: - There might be a more syntactically concise alternative
                     switch $0 {
                     case .pending:
                         self.isLoading = true

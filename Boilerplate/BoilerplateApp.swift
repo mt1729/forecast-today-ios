@@ -10,8 +10,23 @@ import SwiftUI
 
 @main
 struct BoilerplateApp: App {
-    // Needed for InjectionIII (AppCode)
+    let restApi: RestAPI
+    let bkgQueue: DispatchQueue
+    let urlSession: URLSession
+
+    let homeVM: HomeVM
+    let weatherRepo: WeatherRepository
+
     init() {
+        // TODO: - Formation of dependencies here will get bloated over time. Move to separate StateObject(s)
+        bkgQueue = DispatchQueue.global()
+        urlSession = URLSession.shared
+        restApi = BoilerplateRestAPI(urlSession: urlSession)
+
+        weatherRepo = WeatherRepository(dispatchQueue: bkgQueue, restAPI: restApi)
+        homeVM = HomeVM(dispatchQueue: bkgQueue, weatherRepository: weatherRepo)
+
+        // Needed for InjectionIII (AppCode)
         #if DEBUG
         var injectionBundlePath = "/Applications/InjectionIII.app/Contents/Resources"
         #if targetEnvironment(macCatalyst)
@@ -25,7 +40,7 @@ struct BoilerplateApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ContentView().environmentObject(homeVM)
         }
     }
 }
