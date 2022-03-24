@@ -24,7 +24,7 @@ struct BoilerplateApp: App {
         restApi = BoilerplateRestAPI(urlSession: urlSession)
 
         weatherRepo = WeatherRepository(dispatchQueue: bkgQueue, restAPI: restApi)
-        homeVM = HomeVM(dispatchQueue: bkgQueue, weatherRepository: weatherRepo)
+        homeVM = HomeVM(dispatchQueue: bkgQueue, weatherRepo: weatherRepo)
 
         // Needed for InjectionIII (AppCode)
         #if DEBUG

@@ -2,6 +2,7 @@
 // Created by Matthew Taylor on 3/20/22.
 //
 
+import UIKit
 import Combine
 import Foundation
 
@@ -9,7 +10,6 @@ import Foundation
 class BoilerplateRestAPI: RestAPI, ObservableObject {
     let session: URLSession
     init(urlSession session: URLSession) {
-        print("init BoilerplateRestAPI")
         self.session = session
     }
 
@@ -55,6 +55,33 @@ class BoilerplateRestAPI: RestAPI, ObservableObject {
                     print(jsonErr)
                 }
             }.resume()
+        }
+    }
+
+    func fetchConditionImage(imgUri: String) -> Future<NetworkResult<UIImage>, Never> {
+        Future<NetworkResult<UIImage>, Never> { [self] promise in
+            guard let url = URL(string: imgUri) else {
+                promise(.success(.error(NetworkError.invalidURL)))
+                return
+            }
+
+            session.dataTask(with: url) { resData, res, resError in
+                if let err = resError {
+                    promise(.success(.error(err)))
+                    return
+                }
+
+                guard let data = resData, let statusCode = (res as? HTTPURLResponse)?.statusCode else {
+                    promise(.success(.error(NetworkError.emptyResponse)))
+                    return
+                }
+
+                if let img = UIImage(data: data), statusCode.isHTTPSuccess {
+                    promise(.success(.success(statusCode, img)))
+                } else {
+                    promise(.success(.failure(statusCode)))
+                }
+            }
         }
     }
 }
