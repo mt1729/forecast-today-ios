@@ -12,7 +12,6 @@ class WeatherRepository: ObservableObject {
         self.api = api
         self.queue = queue
 
-        print("init WeatherRepository")
         todayForecastRes = NetworkResult.empty
     }
 

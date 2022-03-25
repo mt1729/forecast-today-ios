@@ -6,7 +6,7 @@ import SwiftUI
 import Foundation
 
 struct HomeView: View {
-    // TODO: - Depending on app flow, this might want to be local state / StateObject instead of global state
+    // Depending on app flow, this might need to be local state / StateObject instead of global state
     @EnvironmentObject private var viewModel: HomeVM
 
     // TODO: - Localization / hardcoded strings
@@ -15,35 +15,21 @@ struct HomeView: View {
             VStack(alignment: .center) {
                 TextField("Enter your zip code", text: $viewModel.zipCode)
                         .keyboardType(.decimalPad)
-                        .padding()
+                        .padding([.leading, .trailing, .top])
 
-                Spacer()
+                Divider().background(Color.accentColor).padding([.horizontal, .bottom])
 
-                // TODO: - Refactor content view / HStack to re-usable component
-                // Alternatively, make a publisher inside VM with this accessor logic on `forecast`
                 ZStack(alignment: .center) {
-                    List(viewModel.forecast?.forecastday.first?.hour ?? []) { forecastHour in
-                        NavigationLink(destination: ForecastDetailView(forecastHour: forecastHour)) {
-                            HStack {
-                                AsyncImage(
-                                        url: URL(string: "https:\(forecastHour.condition.iconURI)"),
-                                        content: { img in
-                                            img.resizable().aspectRatio(contentMode: .fit).frame(width: 50, height: 50)
-                                        },
-                                        placeholder: { ProgressView().frame(width: 50, height: 50) })
-                                Text("\(forecastHour.time)")
-                                Spacer()
-                                Text("\(forecastHour.tempF)&deg; F")
-                            }
-                        }
+                    List(viewModel.forecast?.forecastday.first?.hour ?? []) { hour in
+                        ForecastHourRow(forecastHour: hour)
                     }
                     if viewModel.isLoading {
                         ProgressView()
                     } else {
-                        Text(viewModel.listMsg).padding()
+                        Text(viewModel.listMsg).padding(32).multilineTextAlignment(.center)
                     }
                 }
-            }.navigationTitle("Today's Forecast").padding()
-        }
+            }.navigationTitle("Today's Forecast")
+        }.navigationViewStyle(.stack)
     }
 }

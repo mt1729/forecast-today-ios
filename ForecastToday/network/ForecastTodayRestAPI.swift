@@ -9,7 +9,6 @@ import Foundation
 class ForecastTodayRestAPI: RestAPI, ObservableObject {
     let session: URLSession
     init(urlSession session: URLSession) {
-        print("init ForecastTodayRestAPI")
         self.session = session
     }
 
@@ -52,7 +51,6 @@ class ForecastTodayRestAPI: RestAPI, ObservableObject {
                     }
                 } catch let jsonErr {
                     promise(.success(.error(jsonErr)))
-                    print(jsonErr)
                 }
             }.resume()
         }

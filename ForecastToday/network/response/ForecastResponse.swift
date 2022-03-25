@@ -4,7 +4,7 @@
 
 import Foundation
 
-// TODO: - Move any commonly used structs (outside of networking) to `model` folder
+// TODO: - Move any commonly used structs (outside of networking) to a `model` folder
 struct ForecastResponse: Codable {
     let location: Location
     let current: Current
