@@ -2,5 +2,6 @@
 <project version="4">
   <component name="ExternalDependencies">
     <plugin id="com.appcodeplugins.swiftlint" />
+    <plugin id="com.injectionforxcode.injection.plugin.id" />
   </component>
 </project>

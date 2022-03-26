@@ -11,11 +11,17 @@ class HomeVM: ObservableObject {
     private static let emptyStateMsg = "Hourly forecast results will show up here with a valid zip code"
 
     let repo: WeatherRepository
-    let queue: DispatchQueue
+    let bkgQueue: DispatchQueue
 
-    init(dispatchQueue queue: DispatchQueue, weatherRepository repo: WeatherRepository) {
+    private var disposeBag = Set<AnyCancellable>()
+    @Published var zipCode: String
+    @Published private(set) var listMsg: String
+    @Published private(set) var forecast: Forecast?
+    @Published private(set) var isLoading: Bool
+
+    init(bkgQueue: DispatchQueue, repo: WeatherRepository) {
         self.repo = repo
-        self.queue = queue
+        self.bkgQueue = bkgQueue
 
         // Default/init VM state
         zipCode = ""
@@ -23,8 +29,8 @@ class HomeVM: ObservableObject {
         isLoading = false
 
         // (Intensive) calculations from input should be done outside main queue
-        $zipCode.receive(on: queue)
-                .debounce(for: .milliseconds(500), scheduler: queue)
+        $zipCode.receive(on: bkgQueue)
+                .debounce(for: .milliseconds(500), scheduler: bkgQueue)
                 // Quick check if input is digits only
                 .filter { $0.count == 5 && Int($0) != nil }
                 .sink { repo.fetchTodayForecast(zipCode: $0) }
@@ -32,7 +38,6 @@ class HomeVM: ObservableObject {
 
         // Each subscriber below is intended to be organized per publisher within this view model
         // It might not be line-length ideal, though maintainability may be more ideal
-
         repo.$todayForecastRes.receive(on: DispatchQueue.main)
                 .sink {
                     switch $0 {
@@ -72,10 +77,4 @@ class HomeVM: ObservableObject {
                 }
                 .store(in: &disposeBag)
     }
-
-    private var disposeBag = Set<AnyCancellable>()
-    @Published var zipCode: String
-    @Published private(set) var listMsg: String
-    @Published private(set) var forecast: Forecast?
-    @Published private(set) var isLoading: Bool
 }

@@ -52,3 +52,21 @@ struct ForecastDetailView: View {
         }
     }
 }
+
+class ForecastDetailView_Previews: PreviewProvider {
+    static let mockForecastHour = ForecastHourRow_Previews.mockForecastHour
+
+    static var previews: some View {
+        // To update preview with a state, mutate via VM functions
+        ForecastDetailView(forecastHour: mockForecastHour)
+    }
+
+    // Needed for InjectionIII (AppCode)
+    #if DEBUG
+    @objc class func injected() {
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        windowScene?.windows.first?.rootViewController =
+                UIHostingController(rootView: ForecastDetailView_Previews.previews)
+    }
+    #endif
+}

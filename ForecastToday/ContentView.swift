@@ -17,8 +17,11 @@ struct ContentView: View {
 }
 
 class ContentView_Previews: PreviewProvider {
+    static let deps = DependencyGraph.new()
+
     static var previews: some View {
-        ContentView()
+        // To update preview with a state, mutate via VM functions
+        ContentView().environmentObject(deps.homeVM)
     }
 
     // Needed for InjectionIII (AppCode)
