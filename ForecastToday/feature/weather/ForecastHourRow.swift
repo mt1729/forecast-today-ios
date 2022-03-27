@@ -15,15 +15,15 @@ struct ForecastHourRow: View {
         NavigationLink(destination: ForecastDetailView(forecastHour: forecastHour)) {
             HStack {
                 AsyncImage(
-                        url: URL(string: "https:\(forecastHour.condition.iconURI)"),
-                        content: { img in
-                            img.resizable().aspectRatio(contentMode: .fit).frame(width: 50, height: 50)
-                        },
-                        placeholder: { ProgressView().frame(width: 50, height: 50) }
+                    url: URL(string: "https:\(forecastHour.condition.iconURI)"),
+                    content: { img in
+                        img.resizable().aspectRatio(contentMode: .fit).frame(width: 50, height: 50)
+                    },
+                    placeholder: { ProgressView().frame(width: 50, height: 50) }
                 )
-                Text("\(forecastHour.time)")
+                Text("\(forecastHour.time.components(separatedBy: " ").last ?? "")")
                 Spacer()
-                Text("\(forecastHour.tempF)&deg; F")
+                Text("\(forecastHour.tempF.choppedZeroesString())&deg; F")
             }
         }
     }
