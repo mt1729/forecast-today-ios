@@ -21,7 +21,7 @@ struct HomeView: View {
                     .padding([.horizontal, .bottom])
 
                 ZStack(alignment: .center) {
-                    List(viewModel.forecast?.forecastday.first?.hour ?? []) { hour in
+                    List(viewModel.forecast?.daysInfo.first?.hour ?? []) { hour in
                         ForecastHourRow(forecastHour: hour)
                     }
                     if viewModel.isLoading {

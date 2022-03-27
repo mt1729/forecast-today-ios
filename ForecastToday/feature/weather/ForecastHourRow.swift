@@ -6,8 +6,8 @@ import SwiftUI
 import Foundation
 
 struct ForecastHourRow: View {
-    let forecastHour: Hour
-    init(forecastHour: Hour) {
+    let forecastHour: ForecastHour
+    init(forecastHour: ForecastHour) {
         self.forecastHour = forecastHour
     }
 
@@ -15,6 +15,7 @@ struct ForecastHourRow: View {
         NavigationLink(destination: ForecastDetailView(forecastHour: forecastHour)) {
             HStack {
                 AsyncImage(
+                    // TODO: - Mutate URI in response logic
                     url: URL(string: "https:\(forecastHour.condition.iconURI)"),
                     content: { img in
                         img.resizable().aspectRatio(contentMode: .fit).frame(width: 50, height: 50)
@@ -31,10 +32,10 @@ struct ForecastHourRow: View {
 
 class ForecastHourRow_Previews: PreviewProvider {
     // TODO: - Organize mock(s)
-    static let mockForecastHour = Hour(timeEpoch: 1647748800, time: "2022-03-20 00:00",
+    static let mockForecastHour = ForecastHour(timeEpoch: 1647748800, time: "2022-03-20 00:00",
             tempC: 9.4, tempF: 48.9, isDay: 0,
-            condition: Condition(text: "Clear",
-                    iconURI: "//cdn.weatherapi.com/weather/64x64/night/113.png\"", code: 1000
+            condition: ForecastCondition(code: 1000, text: "Clear",
+                    iconURI: "//cdn.weatherapi.com/weather/64x64/night/113.png\""
             ), windMph: 9.4, windKph: 15.1, windDegree: 333, windDir: "NNW",
             pressureMB: 1021.0, pressureIn: 30.16, precipMm: 0.0, precipIn: 0.0, humidity: 70, cloud: 22,
             feelslikeC: 7.2, feelslikeF: 45.0, windchillC: 7.2, windchillF: 45.0, heatindexC: 9.4, heatindexF: 48.9,

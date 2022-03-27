@@ -6,9 +6,9 @@ import SwiftUI
 import Foundation
 
 struct ForecastDetailView: View {
-    let forecastHour: Hour
+    let forecastHour: ForecastHour
 
-    init(forecastHour: Hour) {
+    init(forecastHour: ForecastHour) {
         self.forecastHour = forecastHour
     }
 

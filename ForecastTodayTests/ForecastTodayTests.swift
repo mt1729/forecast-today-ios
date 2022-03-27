@@ -26,6 +26,9 @@ class ForecastTodayTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete.
         // Check the results with assertions afterwards.
+
+        let abcdef = ForecastHourRow_Previews.mockForecastHour
+        abcdef.pressureIn
     }
 
     func testPerformanceExample() throws {
