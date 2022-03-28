@@ -70,10 +70,10 @@ struct ForecastDetailView: View {
 }
 
 class ForecastDetailView_Previews: PreviewProvider {
-    static let mockForecastHour = ForecastHourRow_Previews.mockForecastHour
+    static let mockForecastHour = ForecastResponse.fromJSON(fileName: "forecastResponse")!
+        .forecast.daysInfo.first!.hour.first!
 
     static var previews: some View {
-        // To update preview with a state, mutate via VM functions
         ForecastDetailView(forecastHour: mockForecastHour)
     }
 

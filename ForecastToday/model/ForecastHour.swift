@@ -7,14 +7,6 @@ import Foundation
 struct ForecastHour: Codable, Identifiable, Hashable {
     let id = UUID()
 
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-
-    static func ==(lhs: ForecastHour, rhs: ForecastHour) -> Bool {
-        lhs.id == rhs.id
-    }
-
     let timeEpoch: Int
     let time: String
     let tempC, tempF: Double
@@ -66,5 +58,13 @@ struct ForecastHour: Codable, Identifiable, Hashable {
         case visMiles = "vis_miles"
         case gustMph = "gust_mph"
         case gustKph = "gust_kph"
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func == (lhs: ForecastHour, rhs: ForecastHour) -> Bool {
+        lhs.id == rhs.id
     }
 }

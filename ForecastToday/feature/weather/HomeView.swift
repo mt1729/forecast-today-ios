@@ -8,6 +8,10 @@ import Foundation
 struct HomeView: View {
     @EnvironmentObject private var viewModel: HomeVM
 
+    init() {
+        UITableView.appearance().backgroundColor = .clear
+    }
+
     // TODO: - Localization / hardcoded strings
     var body: some View {
         NavigationView {
@@ -21,8 +25,9 @@ struct HomeView: View {
                     .padding([.horizontal, .bottom])
 
                 ZStack(alignment: .center) {
-                    List(viewModel.forecast?.daysInfo.first?.hour ?? []) { hour in
+                    List(viewModel.todayForecastHours) { hour in
                         ForecastHourRow(forecastHour: hour)
+                            .listRowSeparatorTint(Color.accentColor)
                     }
                     if viewModel.isLoading {
                         ProgressView()

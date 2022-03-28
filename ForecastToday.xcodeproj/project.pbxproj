@@ -74,6 +74,8 @@
 		DA7DD55952C601E7B342929B /* ForecastHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7CA60E92AE2A8D568E7DF0 /* ForecastHour.swift */; };
 		DA7DD864C934FEACD64225AC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DA725D3F3594537780BA6642 /* .swiftlint.yml */; };
 		DA7DE6C54F445E78FF7295D6 /* ForecastTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA76444820248590F0E8014A /* ForecastTodayTests.swift */; };
+		DA7DFBAF79B13460E0E0B5FD /* forecastResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = DA729F0DD9F6F6AE71A11AAE /* forecastResponse.json */; };
+		DA7E1744347D8DAEF7D071AC /* forecastResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = DA729F0DD9F6F6AE71A11AAE /* forecastResponse.json */; };
 		DA7EA2E5AA767045D4B94D91 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DA725D3F3594537780BA6642 /* .swiftlint.yml */; };
 		DA7ED79C47B42C3E84C4CE7A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA7FC743E2E545E7483B3FDE /* .gitignore */; };
 		DA7F14C16C402C9CE7EF9245 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72269125FB2B4C983B6839 /* RestAPI.swift */; };
@@ -116,6 +118,7 @@
 		DA72269125FB2B4C983B6839 /* RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		DA725D3F3594537780BA6642 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DA729A66F0485B07F34CEA70 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA729F0DD9F6F6AE71A11AAE /* forecastResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forecastResponse.json; sourceTree = "<group>"; };
 		DA7394B83A5B39AF4261E519 /* ForecastDayInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDayInfo.swift; sourceTree = "<group>"; };
 		DA73D37EF884E7A8BB2CBBB4 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DA73EAC9E3BAE38A41DA453A /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
@@ -192,6 +195,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DA7180EB918F4F677BD18833 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				DA729F0DD9F6F6AE71A11AAE /* forecastResponse.json */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
 		DA7397F05CD98544365140D3 /* weather */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				DA79869624FAE12C10E9614E /* Preview Assets.xcassets */,
+				DA7180EB918F4F677BD18833 /* mock */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -450,6 +462,7 @@
 				DA7604A8B5E182269F7248F7 /* Preview Assets.xcassets in Resources */,
 				DA752F50DB033921FC5AAFAA /* .gitignore in Resources */,
 				DA72548E69EB1A4720706470 /* .swiftlint.yml in Resources */,
+				DA7E1744347D8DAEF7D071AC /* forecastResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +472,7 @@
 			files = (
 				DA760D531847A7ADDA188397 /* .gitignore in Resources */,
 				DA7DD864C934FEACD64225AC /* .swiftlint.yml in Resources */,
+				DA7DFBAF79B13460E0E0B5FD /* forecastResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
