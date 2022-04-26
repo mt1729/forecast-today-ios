@@ -4,6 +4,7 @@
 
 import Foundation
 
+// NOTE: - Potential fatalErrors will trigger at runtime though only on app launch
 enum Environment {
     private static let infoDict: [String: Any] = {
         guard let dict = Bundle.main.infoDictionary else {
